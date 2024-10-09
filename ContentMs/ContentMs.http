@@ -1,0 +1,6 @@
+@ContentMs_HostAddress = http://localhost:5080
+
+GET {{ContentMs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
