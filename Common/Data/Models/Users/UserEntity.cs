@@ -6,8 +6,12 @@ namespace Common.Data.Models.Users;
 public class UserEntity : BaseEntity
 {
     [Required]
-    [Display(Name = "Имя пользователя")]
-    public required string UserName { get; set; }
+    [Display(Name = "Имя")]
+    public required string FirstName { get; set; }
+
+    [Required]
+    [Display(Name = "Фамилия")]
+    public required string LastName { get; set; }
 
     [Required]
     [Display(Name = "Электронная почта")]

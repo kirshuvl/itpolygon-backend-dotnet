@@ -6,13 +6,13 @@ public class BaseEntity
 {
     [Key]
     [Display(Name = "Идентификатор")]
-    public required int Id { get; set; }
+    public int Id { get; set; } = default!;
 
     [Required]
     [Display(Name = "Дата создания")]
-    public required DateTime CreatedAt { get; set; } = DateTime.Now;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     [Required]
     [Display(Name = "Дата обновления")]
-    public required DateTime UpdatedAt { get; set; } = DateTime.Now;
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 }
